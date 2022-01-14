@@ -217,6 +217,7 @@ a {
     .hamburger {
         display: block;
         cursor: pointer;
+        position: fixed;
     }
 
     .hamburger.active .bar:nth-child(2) {
