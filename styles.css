@@ -1,0 +1,293 @@
+/* TRANSITIONS BETWEEN PAGES */
+
+.transition-fade {
+    opacity: 1;
+    transition: 500ms;
+    transform: translateX(0);
+    transform-origin: left;
+}
+html.is-animating .transition-fade {
+    opacity: 1;
+    transform: translateX(200px);
+}
+
+html.is-leaving .transition-fade {
+    opacity: 0;
+    transform: translateX(0);
+}
+
+/* NAVIGATION MENU */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: absolute;
+    /* center the element */
+    right: 15%;
+    left: 15%;
+    margin-right: 0;
+    margin-left: 0;
+    /* give it dimensions */
+    width: 70%;
+}
+
+main{
+    position: absolute;
+    margin-top: max(12%, 125px);
+    z-index: 1;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Garamond', sans-serif;
+    overflow-y: scroll;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    position: fixed;
+    z-index:2;
+    background-color: white;
+    height: 20%;
+    margin-top: 0%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    position: fixed;
+    background-color: white;
+    border-bottom: 3px solid #E87722;
+    width: 70%;
+    z-index: 3;
+    margin-top: 2%;
+}
+
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 2rem;
+    font-weight: 400;
+    color: black;
+}
+
+.nav-link:hover{
+    color: #0C2352;
+    border-bottom: 2px solid #0C2352;
+}
+
+.nav-logo {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #0C2352;
+}
+
+
+@media only screen and (max-width: 1025px) {
+
+    body {
+        position: absolute;
+        /* center the element */
+        right: 10%;
+        left: 10%;
+        margin-right: 0;
+        margin-left: 0;
+        /* give it dimensions */
+        width: 80%;
+    }
+
+    main{
+        position: absolute;
+        margin-top: max(14%, 100px);
+        z-index: 1;
+    }
+        
+    .header{
+        width: 100%;
+        position: fixed;
+        z-index:2;
+        background-color: white;
+        height: 5%;
+        margin-top: 0%;
+    }
+    
+    .navbar {
+        width: 80%;
+        z-index: 3;
+        margin-top: 1%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        position: absolute;
+        /* center the element */
+        right: 5%;
+        left: 5%;
+        margin-right: 0;
+        margin-left: 0;
+        /* give it dimensions */
+        width: 90%;
+
+    }
+    main{
+        position: absolute;
+        margin-top: max(15%, 90px);
+        z-index: 1;
+    }
+        
+    .header{
+        width: 100%;
+        position: fixed;
+        z-index:2;
+        background-color: white;
+        height: 8%;
+        margin-top: 0%;
+    }
+    
+    .navbar {
+        width: 90%;
+        z-index: 3;
+        margin-top: 1%;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 7.1rem;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 1000;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+/* Body text */
+
+p{
+    font-size: 14pt;
+    color: #4e4e4e;
+    text-align: justify;
+}
+p.second{
+    margin-top: 7.5%;
+}
+
+/* Section titles text */
+p.subtitle{
+    font-size: 18pt;
+    color: #101010
+}
+p.papertitle{
+    font-size:12pt;
+    color: #0C2352;
+    text-align: justify;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+p.abstract{
+    font-size:11pt;
+    color: #4e4e4e;
+    text-align: justify;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+/* Table with design for different screen sizes */
+
+/*First: for desktop */
+.table.mobile{
+    display: none;
+}
+
+table.desktop{
+    display: table;
+}
+
+
+
+/*Second: for mobile */
+@media only screen and (max-width: 768px) {
+    .table.mobile{
+        display: table
+    }
+    
+    .table.desktop{
+        display: none
+    }
+}
+
+.table.spacer{
+    margin-left: 5%;
+}
