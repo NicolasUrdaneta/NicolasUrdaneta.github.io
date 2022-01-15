@@ -253,6 +253,10 @@ a {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .nav-logo {
+        font-size: 2.5rem;
+    }
+
 }
 
 /* Body text */
@@ -309,8 +313,9 @@ table.desktop{
         display: none
     }
     p{
-        font-size: 13pt;
+        font-size: 12pt;
     }
+
 }
 
 .table.spacer{
