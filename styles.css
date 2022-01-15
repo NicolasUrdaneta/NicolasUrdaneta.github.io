@@ -253,7 +253,7 @@ a {
 /* Body text */
 
 p{
-    font-size: 50%;
+    font-size: 14pt;
     color: #4e4e4e;
     text-align: justify;
 }
@@ -302,6 +302,9 @@ table.desktop{
     
     .table.desktop{
         display: none
+    }
+    p{
+        font-size: 13pt;
     }
 }
 
