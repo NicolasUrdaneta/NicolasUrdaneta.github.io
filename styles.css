@@ -21,9 +21,15 @@ html.is-leaving .transition-fade {
     transform: translateX(0);
 }
 
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Garamond');
+@import url('https://fonts.googleapis.com/css2?family=Sans+Serif');
+
+
 /* NAVIGATION MENU */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
 
 * {
     margin: 0;
