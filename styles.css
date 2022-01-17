@@ -321,3 +321,25 @@ table.desktop{
 .table.spacer{
     margin-left: 5%;
 }
+
+/* Read More Button */
+.more{
+    display: none;
+}
+
+.morebutton{
+    margin-top: 1%;
+    background-color: #0C2352;
+    border: none;
+    color: white;
+    padding: 0.5% 1%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 10pt;
+    cursor: pointer;
+}
+
+.morebutton:hover{
+    background-color: #4e4e4e;
+}
