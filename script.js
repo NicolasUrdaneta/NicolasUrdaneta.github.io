@@ -38,15 +38,11 @@ contents.forEach(content => {
     }
 });
 
-function readMore(btn){
+$( document ).on( "pagecreate", "#aboutPage", function readMore(btn){
     let post = btn.parentElement;
     post.querySelector(".dots").classList.toggle("hide");
     post.querySelector(".more").classList.toggle("hide");
     btn.textContent == "Show full abstract" ? btn.textContent = "Hide abstract" : btn.textContent = "Show full abstract";
-}
-
-
-
-$('div:jqmData(role="page")').live('pagebeforeshow',function(){
-    // code to execute on each page change
 });
+
+
