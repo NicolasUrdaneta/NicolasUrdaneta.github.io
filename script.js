@@ -45,7 +45,8 @@ function readMore(btn){
     btn.textContent == "Show full abstract" ? btn.textContent = "Hide abstract" : btn.textContent = "Show full abstract";
 }
 
-$('div:jqmData(url="research.html")').live('pageshow',function(){
-    // code to execute on that page
-    //$(this) works as expected - refers the page
+
+
+$('div:jqmData(role="page")').live('pagebeforeshow',function(){
+    // code to execute on each page change
 });
