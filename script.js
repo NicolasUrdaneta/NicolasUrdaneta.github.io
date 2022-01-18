@@ -44,3 +44,8 @@ function readMore(btn){
     post.querySelector(".more").classList.toggle("hide");
     btn.textContent == "Show full abstract" ? btn.textContent = "Hide abstract" : btn.textContent = "Show full abstract";
 }
+
+$('div:jqmData(url="research.html")').live('pageshow',function(){
+    // code to execute on that page
+    //$(this) works as expected - refers the page
+});
