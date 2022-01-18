@@ -282,7 +282,7 @@ p.papertitle{
     margin-top: 2%;
     margin-left: 2%;
 }
-p.abstract{
+p.content{
     font-size:11pt;
     color: #4e4e4e;
     text-align: justify;
@@ -316,6 +316,7 @@ table.desktop{
         font-size: 12pt;
     }
 
+
 }
 
 .table.spacer{
@@ -323,11 +324,11 @@ table.desktop{
 }
 
 /* Read More Button */
-.more{
+.hide{
     display: none;
 }
 
-.morebutton{
+.post button{
     margin-top: 1%;
     background-color: #0C2352;
     border: none;
@@ -338,8 +339,9 @@ table.desktop{
     display: block;
     font-size: 10pt;
     cursor: pointer;
+    margin-left: 2%;
 }
 
-.morebutton:hover{
+.post button:hover{
     background-color: #4e4e4e;
 }
