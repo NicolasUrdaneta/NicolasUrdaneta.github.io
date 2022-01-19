@@ -6,25 +6,25 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <script defer src="swup/dist/swup.min.js"></script>
         <script defer src="script.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <link href="styles.css" rel="stylesheet">
         <link href="normalize.css" rel="stylesheet">
         <title>N Urdaneta</title>
         <link rel="shortcut icon" type="image/jpg" href="photos/small/favicon.png"/>
     </head>
+
 <body>
     <header class="header">
         <nav class="navbar">
             <a href="/index.html" class="nav-logo"><b>Nicolás Urdaneta</b></a>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="/index.html" class="nav-link" data-ajax="false">Home</a>
+                    <a href="/index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/cv.html" class="nav-link" data-ajax="false">CV</a>
+                    <a href="/cv.html" class="nav-link">CV</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/research.html" class="nav-link" data-ajax="false">Research</a>
+                    <a href="/research.html" class="nav-link">Research</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -113,5 +113,37 @@
         Juan Sebastián Muñoz)</p>
         </div>
     </main>
+
+    
+    <script>
+        /* READ MORE */
+        /* This Javascript must be here in order to work properly, do not move outside
+            body or to script.js */ 
+        let noOfCharac = 300;
+        let contents = document.querySelectorAll(".content");
+        
+        contents.forEach(content => {
+            //If text length is less that noOfCharac... then hide the read more button
+            if(content.textContent.length < noOfCharac){
+                content.nextElementSibling.style.display = "none";
+            }
+            else{
+                let displayText = content.textContent.slice(0,noOfCharac);
+                let moreText = content.textContent.slice(noOfCharac);
+                content.innerHTML = `${displayText}<span class="dots">...</span><span class="hide more">${moreText}</span>`;
+            }
+        });
+        
+        
+        function readMore(btn){
+            let post = btn.parentElement;
+            post.querySelector(".dots").classList.toggle("hide");
+            post.querySelector(".more").classList.toggle("hide");
+            btn.textContent == "Show full abstract" ? btn.textContent = "Hide abstract" : btn.textContent = "Show full abstract";
+        }
+    </script>
 </body>
+
+
+
 </html>
