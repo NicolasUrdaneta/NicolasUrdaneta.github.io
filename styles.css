@@ -74,10 +74,10 @@ a {
 
 a.externalsites {
     text-decoration: none;
-    color: inherit;
+    color: #0C2352;
 }
 a.externalsites:visited{
-    color: inherit;
+    color: #0C2352;
 }
 a.externalsites:hover{
     color: #2471A3;
