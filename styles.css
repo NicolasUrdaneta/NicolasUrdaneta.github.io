@@ -72,16 +72,23 @@ a {
     text-decoration: none;
 }
 
-a.externalsites {
+.externalsites {
     text-decoration: none;
     color: #0C2352;
 }
-a.externalsites:visited{
+.externalsites:visited{
     color: #0C2352;
 }
-a.externalsites:hover{
+.externalsites:hover{
     color: #2471A3;
     text-decoration: underline;
+}
+
+.docs:hover{
+    color: #101010
+}
+.docs{
+    color: #2471A3
 }
 
 .header{
