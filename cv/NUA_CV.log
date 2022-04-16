@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.10)  10 MAR 2022 21:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.10)  16 APR 2022 16:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -837,30 +837,35 @@ Overfull \hbox (7.21284pt too wide) in paragraph at lines 54--58
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--122
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--131
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
 [1
 
 {C:/Users/urdan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 []|\OT1/lmr/m/n/12 Department Chair and Pro-fes-sor, Bring-ham Young Uni-ver-si
 ty.
  []
 
 
-Overfull \hbox (6.9033pt too wide) in paragraph at lines 189--198
+Overfull \hbox (6.9033pt too wide) in paragraph at lines 192--201
 [] 
  []
 
@@ -871,7 +876,7 @@ Package rerunfilecheck Info: File `NUA_CV.out' has not changed.
 Here is how much of TeX's memory you used:
  16633 strings out of 478659
  273358 string characters out of 2845920
- 590799 words of memory out of 3000000
+ 589799 words of memory out of 3000000
  34425 multiletter control sequences out of 15000+600000
  453581 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -883,7 +888,7 @@ Users/urdan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:
 Users/urdan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/U
 sers/urdan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/U
 sers/urdan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb>
-Output written on NUA_CV.pdf (2 pages, 115793 bytes).
+Output written on NUA_CV.pdf (2 pages, 116427 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  16 named destinations out of 1000 (max. 500000)

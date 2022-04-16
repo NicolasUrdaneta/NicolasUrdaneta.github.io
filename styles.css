@@ -72,6 +72,18 @@ a {
     text-decoration: none;
 }
 
+a.externalsites {
+    text-decoration: none;
+    color: inherit;
+}
+a.externalsites:visited{
+    color: inherit;
+}
+a.externalsites:hover{
+    color: #2471A3;
+    text-decoration: underline;
+}
+
 .header{
     width: 80%;
     position: fixed;
@@ -85,7 +97,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1%;
     position: fixed;
     background-color: white;
     border-bottom: 3px solid #E87722;
