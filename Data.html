@@ -34,6 +34,9 @@
                 <li class="nav-item">
                     <a href="/research.html" class="nav-link">Research</a>
                 </li>
+                <li class="nav-item">
+                    <a href="/data.html" class="nav-link">Data</a>
+                </li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -46,22 +49,93 @@
 
     <main id="swup" class="transition-fade">
         <p class="subtitle" style="margin-top: 3%; padding-left: 2%;"> Microdata resources</p>
-        <p style="color: #202020; margin-top: 1%; padding-left:3%; width: 90%;" >Here are some publicly available sources of microdata for household labour surveys and manufacturing surveys. Most are publicly available or at least have a limited version that is available for download. Given my research experience, most surveys I know are from Latin American countries.</p>
+        <p style="color: #202020; margin-top: 1%; padding-left:3%; width: 90%;" >Here are some publicly available sources of microdata for household labour force surveys, business surveys (manufacturing, services, and retail), and customs registries. Most are publicly available or at least have a limited version that is available for download. Given my research experience, most of the data available I know come from Latin American countries.</p>
         
-
         <p class="subtitle" style="margin-top: 3%; padding-left: 2%;"> Household Surveys</p>
-        <p style="color: #202020; margin-top: 1%; padding-left:3%; width: 90%;" >
-        </p>
-        <p class="subtitle" style="margin-top: 3%; margin-bottom: 1%; padding-left: 2%"> Manufacturing Surveys </p> 
         <br>
         <ul style="font-size: 13pt; color: #202020; margin-left:3%; width: 90%;list-style-type: square;">
-            <li>Chile</li>
-            <li>Colombia</li>
-            <li>India</li>
-            <li>Ecuador</li>
-            <li>Peru</li>
+        In Eslava, Meléndez, Tenjo, and Urdaneta (2023) we use household surveys from 11 Latin American countries, European countries, U.S., India, Nepal, Pakistan, South Korea, and Australia. See the replication files for details to access/download the microdata. <a
+        href="https://reproducibility.worldbank.org/index.php/catalog/66"
+        target="https://reproducibility.worldbank.org/index.php/catalog/66"
+        title="Household Surveys Microdata" class="docs">[Household Surveys Microdata]</a>
         </ul>
+        <p style="color: #202020; margin-top: 1%; padding-left:3%; width: 90%;" >
+        </p>
+        <p class="subtitle" style="margin-top: 3%; margin-bottom: 1%; padding-left: 2%"> Firm Level Surveys </p> 
+        </ul>
+        <ul style="font-size: 13pt; color: #202020; margin-left:5%; width: 90%;list-style-type: square;">
+            <div class="button-container" onclick="readMoreTriangle(this)">
+                <button class="triangle-button"></button>
+                <span class="button-text">Chile</span>
+                <div class="hidden-text" > The Chilean manufacturing survey has two versions: 1) disclosed at the 3-digit sector level with panel identifiers for the period 1990-2019. 2) Disclosed at the 4-digit sector level without panel identifiers after 2008. Both data versions are available <a
+                    href="https://reproducibility.worldbank.org/index.php/catalog/66"
+                    target="https://reproducibility.worldbank.org/index.php/catalog/66"
+                    title="Household Surveys Microdata" class="docs">here</a>. </div>
+            </div>
+
+            <div class="button-container" onclick="readMoreTriangle(this)">
+                <button class="triangle-button"></button>
+                <span class="button-text">Colombia</span>
+                <div class="hidden-text">Colombian manufacturing microdata exists since 1971. However, access to the full data requires access through the Colombian national statistical agency, DANE. A public version of the dataset is available since 1992 here. Additionally, versions of the 1981-1991 data have been published in some paper replication files (access here). It is not possible to link firms before and after 1992 unless accessing the data through DANE (see Eslava, Haltiwanger, Urdaneta, 2024 for details).</div>
+
+            </div>
+
+            <div class="button-container" onclick="readMoreTriangle(this)">
+                <button class="triangle-button"></button>
+                <span class="button-text">Bolivia</span>
+                <div class="hidden-text">The only survey I know to be publicly available is for 2017-18 for medium and large manufacturing firms. Access requires registration. The data is available here.</div>
+
+            </div>
+
+            <div class="button-container" onclick="readMoreTriangle(this)">
+                <button class="triangle-button"></button>
+                <span class="button-text">India</span>
+                <div class="hidden-text">The data available for download does not contain firm panel identifiers. Data is available with registration here.</div>
+                
+            </div>
+
+            <div class="button-container" onclick="readMoreTriangle(this)">
+                <button class="triangle-button" ></button>
+                <span class="button-text">Ecuador</span>
+                <div class="hidden-text">Ecuadorian manufacturing data has unreliable sampling before 2016. I only recommend using the Encuesta Estructural Empresarial (Structural Enterprise Survey) data, which is available since 2016. A nice feature of this data is that it includes information on input and output quantities and prices for manufacturing firms. </div>
+            </div>
+
+            <div class="button-container" onclick="readMoreTriangle(this)">
+                <button class="triangle-button"></button>
+                <span class="button-text">Peru</span>
+                <div id="textField5" class="hidden-text">Peruvian economic survey is available since 2001 here. A nice feature of this data is that it includes information on input and output quantities and prices for manufacturing firms.</div>
+            </div>
+        </ul>
+        <br>
+
         
+        <p class="subtitle" style="margin-top: 3%; margin-bottom: 1%; padding-left: 2%"> Customs Data </p>
+        </ul>
+        <ul style="font-size: 13pt; color: #202020; margin-left:5%; width: 90%;list-style-type: square;">
+            <div class="button-container" onclick="readMoreTriangle(this)">
+                <button class="triangle-button"></button>
+                <span class="button-text">Chile</span>
+                <div class="hidden-text">Chile has customs data with the Chilean firm identifier since 2009 here. Without the identifier, but still at the transaction level, since 2002 here.</div>
+            </div>
+            <div class="button-container" onclick="readMoreTriangle(this)">
+                <button class="triangle-button"></button>
+                <span class="button-text">Colombia</span>
+                <div class="hidden-text">Colombia has customs data with Colombian and foreign firm identifiers from 2001 onwards here. There is also data on previous years at the product-department (i.e. state in the U.S.)-country of destination level since 1970 here.</div>
+            </div>
+            <div class="button-container" onclick="readMoreTriangle(this)">
+                <button class="triangle-button"></button>
+                <span class="button-text">Paraguay</span>
+                <div class="hidden-text">Paraguay has data at the transaction level with the Paraguay firm identifier here. Data is available since 1997 for imports and 2001 for exports.</div>
+            </div>
+            <div class="button-container" onclick="readMoreTriangle(this)">
+                <button class="triangle-button"></button>
+                <span class="button-text">Peru</span>
+                <div class="hidden-text">Peru has transaction level data with Peruvian firm identifier here. Note that most files are actually not visible.</div>
+            </div>
+        </ul>
+        <br>
+        <br>
+        <br>        
         
     </main>
 </body>

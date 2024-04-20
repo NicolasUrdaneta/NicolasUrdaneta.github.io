@@ -117,6 +117,9 @@ a {
 .hamburger {
     display: none;
 }
+.triangle {
+    display: none;
+}
 
 .bar {
     display: block;
@@ -307,6 +310,69 @@ p.content{
     text-align: justify;
     margin-top: 1%;
     margin-left: 2%;
+}
+p.moreinfodown{
+    font-size:12pt;
+    color: #202020;
+    text-align: justify;
+    margin-top: 1%;
+    margin-left: 2%;
+    display: inline-block;
+
+}
+
+
+.triangle-button:hover{
+    color: #2471A3;
+    text-decoration: underline;    
+    border: 10px solid #2471A3 ;
+    background-color: transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 0px solid transparent;
+    border-left: 15px solid #2471A3; /* Adjust color as needed */
+    margin-right: 7px; /* Adjust spacing between button and text */
+
+}
+
+.triangle-button {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 0px solid transparent;
+    border-left: 15px solid #0C2352; /* Adjust color as needed */
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.3s ease; /* Add transition for smooth rotation */
+    margin-right: 5px; /* Adjust spacing between button and text */
+}
+.triangle-button.down {
+    transform: rotate(90deg); /* Rotate the triangle 180 degrees */
+}
+.triangle-button.gray {
+    border-left-color: gray; /* Change color to gray */
+}
+.triangle-button.gray:hover {
+    border-left-color: #2471A3; /* Adjust color as needed */
+}
+
+.button-text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 7px
+}
+.button-text:hover {
+    text-decoration: underline;
+    color: #2471A3;
+    cursor:pointer
+}
+
+
+.hidden-text {
+    display: none;
+    margin-left:3%;
 }
 
 /* Table with design for different screen sizes */
