@@ -77,3 +77,14 @@ function readMoreTriangle(container) {
         triangle.classList.remove('gray');
     }
 }
+
+// Fixes in google analytics
+var approvedDomains = ['nicolasurdaneta.github.io'];
+
+function isApprovedDomain() {
+  return approvedDomains.includes(window.location.hostname);
+}
+if (isApprovedDomain()) {
+    // Your new GA code here
+    gtag('config', 'G-NEWTRACKINGID');  // For GA4
+}
