@@ -26,7 +26,7 @@ function closeMenu() {
 
 function init () {
 
-        let noOfCharac = 300;
+        let noOfCharac = 0;
         let contents = document.querySelectorAll(".content");
         
     contents.forEach(content => {
@@ -37,7 +37,7 @@ function init () {
             else{
                 let displayText = content.textContent.slice(0,noOfCharac);
                 let moreText = content.textContent.slice(noOfCharac);
-                content.innerHTML = `${displayText}<span class="dots">...</span><span class="hide more">${moreText}</span>`;
+                content.innerHTML = `${displayText}<span class="dots"></span><span class="hide more">${moreText}</span>`;
             }
         });
 
@@ -50,7 +50,7 @@ function readMore(btn){
     let post = btn.parentElement;
     post.querySelector(".dots").classList.toggle("hide");
     post.querySelector(".more").classList.toggle("hide");
-    btn.textContent == "Show full abstract" ? btn.textContent = "Hide abstract" : btn.textContent = "Show full abstract";
+    btn.textContent == "Show abstract" ? btn.textContent = "Hide abstract" : btn.textContent = "Show abstract";
 };
 
 
