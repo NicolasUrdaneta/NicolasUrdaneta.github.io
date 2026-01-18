@@ -281,17 +281,17 @@ a {
 
 }
 /*   For wide desktop sizes */
-@media only screen and (min-width: 1572px) {
+@media only screen and (min-width: 1500px) {
 
     body {
         position: absolute;
         /* center the element */
-        right: calc(50% - 550px);
+        right: calc(50% - 525px);
         left: auto;
         /* give it dimensions */
-        width: 1100px;
+        width: 1050px;
         resize: none;
-        max-width: 1100px;
+        max-width: 1050px;
     }
 
     main{
@@ -301,7 +301,7 @@ a {
     }
 
     .header{
-        width: 1100px;
+        width: 1050px;
         position: fixed;
         z-index:2;
         background-color: white;
@@ -317,9 +317,10 @@ a {
         position: fixed;
         background-color: white;
         border-bottom: 4px solid #D46E1A;
-        width: 1100px;
+        width: 1050px;
         z-index: 3;
         margin-top: 2%;
+        max-width:1050px;
     }
 
 
